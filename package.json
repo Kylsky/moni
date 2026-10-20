@@ -1,0 +1,108 @@
+{
+  "name": "moni",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.30.3",
+  "scripts": {
+    "dev": "vite dev --host 127.0.0.1 --port 3000 --strictPort",
+    "build": "vite build && tsc --noEmit",
+    "preview": "vite preview",
+    "deploy": "wrangler d1 migrations apply DB --remote && wrangler deploy && node scripts/bootstrap-deployment-secrets.mjs",
+    "deploy:local": "pnpm run build && pnpm run deploy",
+    "build:preview": "CLOUDFLARE_ENV=preview pnpm run build",
+    "deploy:preview": "CLOUDFLARE_ENV=preview pnpm run deploy:local",
+    "deploy:dry-run": "wrangler deploy --dry-run --env-file config/local.vars.example --outdir .wrangler/deploy-dry-run",
+    "db:migrate:local": "wrangler d1 migrations apply DB --local --config wrangler.jsonc",
+    "check:private": "node scripts/check-private-output.mjs",
+    "check": "biome check . && pnpm locale:check && pnpm test && tsc --noEmit",
+    "lint": "biome check --write .",
+    "format": "biome format --write .",
+    "test": "vitest run && pnpm test:workers",
+    "test:workers": "vitest run --config vitest.workers.config.ts",
+    "e2e": "pnpm build && playwright test",
+    "e2e:install": "playwright install chromium",
+    "locale:check": "tsx scripts/check-locale-keys.ts",
+    "locale:compile": "paraglide-js compile --project ./project.inlang --outdir ./src/locale/paraglide --emit-ts-declarations",
+    "cf-typegen": "wrangler types --env-interface Env --env-file config/local.vars.example --strict-vars false",
+    "postinstall": "pnpm locale:compile && pnpm cf-typegen",
+    "wechat:setup": "node scripts/setup-wechat-secret.mjs"
+  },
+  "cloudflare": {
+    "bindings": {
+      "DB": {
+        "description": "Private ledger, financial records, chat history and staged backups. Keep production and preview databases separate."
+      },
+      "CONVERSATIONS": {
+        "description": "One SQLite Durable Object per conversation; coordinates streaming and execution permissions. No external script binding."
+      },
+      "ACCESS_ISSUER": {
+        "description": "Your Cloudflare Access team origin, such as https://your-team.cloudflareaccess.com. Set privately after configuring Access for this Worker."
+      },
+      "ACCESS_AUDIENCE": {
+        "description": "Application Audience (AUD) from the Access application protecting this Worker, including all traffic."
+      },
+      "OWNER_SUBJECT": {
+        "description": "Exact Access user ID (JWT sub) of the single owner. Obtain from your own Zero Trust user details; never bind the first visitor automatically."
+      },
+      "AI_API_KEY": {
+        "description": "Optional legacy environment fallback. Prefer configuring AI in owner-only web Settings after deployment."
+      },
+      "AI_BASE_URL": {
+        "description": "Optional private OpenAI-compatible provider base URL. Keep provider settings server-side and configure together with AI_API_KEY and AI_MODEL."
+      },
+      "AI_MODEL": {
+        "description": "Optional provider model ID. Validate tool calling and structured outputs with synthetic entries before personal use."
+      },
+      "WECHAT": {
+        "description": "Optional ClawBot receiver. SQLite Durable Object keeps encrypted credentials, inbox, deduplication and polling cursor separate from business backups."
+      },
+      "WECHAT_SECRET": {
+        "description": "Generated once by the deploy script as a Worker Secret. Encrypts WeChat credentials and reply context. Preserve it on redeploy; the owner only needs to scan a QR code."
+      },
+      "CONFIG_ENCRYPTION_KEY": {
+        "description": "Generated once by the deploy script as a Worker Secret. Encrypts web-configured AI credentials; never rotate during ordinary redeploys."
+      }
+    }
+  },
+  "dependencies": {
+    "@base-ui/react": "^1.7.0",
+    "@fontsource-variable/baloo-2": "5.3.0",
+    "@inlang/paraglide-js": "^2.20.0",
+    "@tabler/icons-react": "^3.36.1",
+    "@tanstack/ai": "^0.69.0",
+    "@tanstack/ai-compaction": "0.2.0",
+    "@tanstack/ai-openai": "^0.30.0",
+    "@tanstack/ai-persistence": "^0.9.0",
+    "@tanstack/ai-react": "^0.30.4",
+    "@tanstack/react-router": "^1.170.18",
+    "@tanstack/react-start": "^1.168.32",
+    "jose": "^6.2.12",
+    "qrcode-generator": "2.0.4",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-markdown": "10.1.0",
+    "remark-gfm": "4.0.1",
+    "wechat-ilink-client": "0.1.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.3.12",
+    "@cloudflare/vite-plugin": "^1.47.0",
+    "@cloudflare/vitest-plugin": "^1.4.4",
+    "@playwright/test": "^1.62.0",
+    "@tailwindcss/vite": "^4.1.18",
+    "@types/node": "^22.10.2",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "^5.2.0",
+    "miniflare": "5.20261012.1-beta",
+    "tailwindcss": "^4.1.18",
+    "tsx": "^4.21.0",
+    "typescript": "^5.7.2",
+    "vite": "^7.3.6",
+    "vite-tsconfig-paths": "^6.0.2",
+    "vitest": "4.1.10",
+    "wrangler": "^4.114.0"
+  }
+}

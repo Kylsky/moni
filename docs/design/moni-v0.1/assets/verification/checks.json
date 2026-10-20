@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-18",
+  "assetCount": 8,
+  "brandWordmarks": 2,
+  "assistantIllustrations": 6,
+  "customIconAssets": 0,
+  "allFilesRGBA": true,
+  "pngHashesVerified": true,
+  "allUIBoardsAndReferenceUnchanged": true,
+  "otherExistingFilesUnchanged": 221,
+  "existingMetadataUpdated": [
+    "DESIGN.md",
+    "docs/design/moni-v0.1/REVIEW.md",
+    "docs/design/moni-v0.1/design-brief.json",
+    "docs/design/moni-v0.1/review-manifest.json",
+    "docs/design/moni-v0.1/review.html",
+    "docs/design/moni-v0.1/verification/checks.json"
+  ],
+  "browser": {
+    "imagesLoaded": 24,
+    "desktopDocumentWidth": 1164,
+    "desktopViewportWidth": 1164,
+    "narrowDocumentWidth": 355,
+    "narrowViewportWidth": 355,
+    "horizontalOverflow": false
+  },
+  "alphaComposite": "visually_checked_on_light_and_dark",
+  "dependencies": "not_installed_or_changed",
+  "applicationSource": "unchanged",
+  "applicationBuild": "not_run_assets_only",
+  "deployment": "not_performed"
+}

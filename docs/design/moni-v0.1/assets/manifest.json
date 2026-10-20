@@ -1,0 +1,291 @@
+{
+  "title": "Moni UI 素材包",
+  "date": "2026-10-18",
+  "status": "extracted",
+  "uiReview": "approved_by_user_for_asset_extraction",
+  "mode": "built-in ImageGen",
+  "method": "依据批准位图提取并清理重绘为独立透明 PNG，不是逐像素裁切或原生矢量文件。",
+  "icons": {
+    "library": "@tabler/icons-react",
+    "dependencyRange": "^3.36.1",
+    "lockfileVersion": "3.46.0",
+    "newIconArt": 0,
+    "dependencyInstallPerformed": false,
+    "exportRuntimeValidation": "not_run_dependencies_not_installed",
+    "usage": "复用项目已声明的图标库；通常为 24px、2px 描边、currentColor；交互热区至少 44px。"
+  },
+  "assets": [
+    {
+      "id": "wordmark-on-light",
+      "name": "浅色背景字标",
+      "file": "brand/wordmark-on-light.png",
+      "sourceBoard": "reference/selected-mobile.png",
+      "width": 2172,
+      "height": 724,
+      "bytes": 587257,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "visibleBoundsAlpha32": [
+        178,
+        54,
+        1986,
+        664
+      ],
+      "sha256": "68141fed966c9e92d1f1ff5aa0009f28dbeb1c837c943aa3607616f942841723",
+      "slotTargetCssApprox": {
+        "mobile": [
+          94,
+          36
+        ],
+        "desktop": [
+          118,
+          44
+        ]
+      },
+      "scaling": "保留原始比例及透明留白；slot 为目标可见区域，按可见边界调整图片元素尺寸。"
+    },
+    {
+      "id": "wordmark-on-dark",
+      "name": "深色背景字标",
+      "file": "brand/wordmark-on-dark-v2.png",
+      "sourceBoard": "boards/B19.png",
+      "width": 2172,
+      "height": 724,
+      "bytes": 657063,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "visibleBoundsAlpha32": [
+        176,
+        51,
+        1966,
+        655
+      ],
+      "sha256": "01e2c7b5c426648454c7a534fbcff586710886a0f7b9f726b86ae7233f3eee50",
+      "slotTargetCssApprox": {
+        "mobile": [
+          94,
+          36
+        ],
+        "desktop": [
+          118,
+          44
+        ]
+      },
+      "scaling": "保留原始比例及透明留白；slot 为目标可见区域，按可见边界调整图片元素尺寸。",
+      "editSource": "brand/wordmark-on-light.png"
+    },
+    {
+      "id": "assistant-writing",
+      "name": "小票助手·记账",
+      "file": "illustrations/assistant-writing.png",
+      "sourceBoard": "reference/selected-mobile.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 558111,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "visibleBoundsAlpha32": [
+        282,
+        216,
+        1042,
+        1050
+      ],
+      "sha256": "baafbfc112cedd349eff38b8efa2f8b7322d4465f25f3df8d84a9202e0af1f60",
+      "slotTargetCssApprox": {
+        "mobile": [
+          56,
+          56
+        ],
+        "desktop": [
+          72,
+          72
+        ],
+        "emptyState": [
+          144,
+          144
+        ]
+      },
+      "scaling": "保留原始比例及透明留白；slot 为目标可见区域，按可见边界调整图片元素尺寸。"
+    },
+    {
+      "id": "assistant-search",
+      "name": "小票助手·查找",
+      "file": "illustrations/assistant-search.png",
+      "sourceBoard": "boards/B17-r2.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 687701,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "visibleBoundsAlpha32": [
+        218,
+        219,
+        1100,
+        1043
+      ],
+      "sha256": "89d7a1a8e9ce022d3fc08140885fcb7d140ece3703cf3eb32e6ce792ff9cf2c6",
+      "slotTargetCssApprox": {
+        "mobile": [
+          56,
+          56
+        ],
+        "desktop": [
+          72,
+          72
+        ]
+      },
+      "scaling": "保留原始比例及透明留白；slot 为目标可见区域，按可见边界调整图片元素尺寸。"
+    },
+    {
+      "id": "assistant-warning",
+      "name": "小票助手·异常",
+      "file": "illustrations/assistant-warning.png",
+      "sourceBoard": "boards/B18.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 706328,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "visibleBoundsAlpha32": [
+        227,
+        214,
+        1136,
+        1091
+      ],
+      "sha256": "bc55fb0fdfd89e14ce50017d2c1253186e077605e07320fdbf4f8a37a57ad11c",
+      "slotTargetCssApprox": {
+        "mobile": [
+          56,
+          56
+        ],
+        "desktop": [
+          72,
+          72
+        ]
+      },
+      "scaling": "保留原始比例及透明留白；slot 为目标可见区域，按可见边界调整图片元素尺寸。"
+    },
+    {
+      "id": "assistant-lock",
+      "name": "小票助手·权限",
+      "file": "illustrations/assistant-lock.png",
+      "sourceBoard": "boards/B14.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 496121,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "visibleBoundsAlpha32": [
+        239,
+        301,
+        1086,
+        1006
+      ],
+      "sha256": "be8f7022376d69af6caafdc742cc9852d70c5d1d882ef308bb257d533c19a83b",
+      "slotTargetCssApprox": {
+        "mobile": [
+          128,
+          128
+        ],
+        "desktop": [
+          160,
+          160
+        ]
+      },
+      "scaling": "保留原始比例及透明留白；slot 为目标可见区域，按可见边界调整图片元素尺寸。"
+    },
+    {
+      "id": "assistant-backup",
+      "name": "小票助手·备份",
+      "file": "illustrations/assistant-backup.png",
+      "sourceBoard": "boards/B18.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 509831,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "visibleBoundsAlpha32": [
+        238,
+        320,
+        1081,
+        968
+      ],
+      "sha256": "0aa8b55ccc9cf9bb075cdabf7d03c23ad1adf65f6a5f68a657217c29450bcd09",
+      "slotTargetCssApprox": {
+        "mobile": [
+          56,
+          56
+        ],
+        "desktop": [
+          72,
+          72
+        ]
+      },
+      "scaling": "保留原始比例及透明留白；slot 为目标可见区域，按可见边界调整图片元素尺寸。"
+    },
+    {
+      "id": "assistant-delete",
+      "name": "小票助手·删除",
+      "file": "illustrations/assistant-delete.png",
+      "sourceBoard": "boards/B18.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 483423,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "visibleBoundsAlpha32": [
+        218,
+        279,
+        1060,
+        993
+      ],
+      "sha256": "f1c7372022ca459df0f0e7fb41967e6394019655e568d28cd574897c9cb46aab",
+      "slotTargetCssApprox": {
+        "mobile": [
+          56,
+          56
+        ],
+        "desktop": [
+          72,
+          72
+        ]
+      },
+      "scaling": "保留原始比例及透明留白；slot 为目标可见区域，按可见边界调整图片元素尺寸。"
+    }
+  ],
+  "notIncluded": [
+    "导航、分类、功能及状态图标",
+    "按钮、边框、气泡、图表及界面文字",
+    "新绘制的 CSV、上传、下载美术图标"
+  ],
+  "businessImplementation": "not_started",
+  "deployment": "not_started",
+  "checks": {
+    "alpha": "RGBA，各文件 alpha 范围为 0–255，四角完全透明；可见主体未触碰画布边缘。",
+    "browserComposite": "passed_on_light_and_dark_backgrounds",
+    "preview": {
+      "imagesLoaded": 24,
+      "desktopDocumentWidth": 1164,
+      "desktopViewportWidth": 1164,
+      "narrowDocumentWidth": 355,
+      "narrowViewportWidth": 355,
+      "horizontalOverflow": false
+    }
+  }
+}

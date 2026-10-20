@@ -1,0 +1,179 @@
+{
+  "status": "approved-for-asset-extraction",
+  "date": "2026-10-18",
+  "selectedReference": "reference/selected-mobile.png",
+  "scope": "Approved full-screen UI; custom wordmark and assistant assets extracted. Functional icons reuse Tabler Icons. No business implementation or deployment.",
+  "approvalGate": "User approved UI and asset extraction on 2026-10-18. Business implementation and deployment remain outside this authorization.",
+  "basePrompt": "Create realistic, production-quality UI designs with clear hierarchy, strong typography and purposeful spacing. You are extending the attached SELECTED Moni UI, not exploring a different style. Preserve its warm ivory paper, subtle texture, soft yellow chat bubbles, rounded black Moni wordmark with orange dot, hand-drawn outlined receipt assistant mascot, 2px ink borders, orange primary buttons with small hard offset shadows, rounded10px corners and simple pictogram icons. Colors background#fff8e8,surface#fffdf7,ink#171313,muted#62594d,orange#ff6038,yellow#ffd84a,green#a8dc73. Use Baloo2-like rounded Latin wordmark/numbers plus readable PingFangSC Chinese, maximum2fonts,body14–16px logical. Match the attached reference's visual identity closely. MAIN DELIVERABLE: one cohesive paired responsive DESIGN REVIEW BOARD of the SAME workflow: one PC app screen logical1440x1024 on left and its mobile web screen logical390x844 on right. Canvas2240x1320 with clean neutral board margin, title across top and small labels PC1440×1024 and手机390×844 outside app screens. Preserve natural viewport proportions; mobile is NOT stretched and desktop is NOT a giant mobile card. Render high resolution and crisp legible Chinese. Each screen is actual edge-to-edge app UI, no device bezels,OS bars,notches,browser chrome,home indicators,device shadows,marketing scene or perspective. Desktop uses an approximately216px sidebar:Moni,new conversation,对话/账目/统计, and设置 lower, recent conversations only for chat. Mobile uses compact header and bottom nav exactly对话/账目/统计/设置 when authenticated. For setup/access gates omit private app nav. Non-chat screens have no composer. Use one focused primary action per screen, avoid nested cards or advertising every feature. Prefer spacing/alignment/type hierarchy then thin dividers, selective tints and outlines, shadow only on primary controls. No glass/gradients/banking wallets/account balances/budgets/recurring bills/voice/camera/bank sync/marketing slogans/developer internals/API keys. Today anchor2026-10-18 Asia/Shanghai. All visible amounts and FX quotes are fictional mock data, source quote7.20 is illustrative. Labels示例数据 can appear quietly. Preserve CNY/USD originals+converted amounts,never add unlike currencies,refunds are not income. User must confirm drafts;no saved status or totals from unconfirmed drafts. Minimum44px touch controls, readable type and comfortable whitespace; if content is long use a deliberate natural scroll, don't shrink everything to fit. This is a single selected visual system across desktop and mobile, not multiple alternative concepts. Current board specification:\n\nIMPORTANT: The attached screenshots are STYLE references, not content templates. Only chat screens may repeat user bubbles, assistant messages and a composer. For ledger/forms/statistics/settings/data/trash screens show the requested dedicated app page with the correct selected nav, not the chat page. In all FX copy say 按账目发生日取参考汇率, never 最新汇率. Every segmented/radio option must have a unique correct label.\n",
+  "boards": [
+    {
+      "id": "B01",
+      "name": "新会话与手动入口",
+      "group": "core",
+      "brief": "New empty conversation. Greeting 今天想记点什么？ small receipt-paper assistant consistent with reference. Two sample suggestions 午饭35，推广20美元 and 最近3个月外卖花了多少钱. One generous composer 记一笔，或问问账本… with send action, clear secondary 手动记账. No saved entries yet, no made-up totals. Desktop sidebar recent threads + new chat, mobile compact history action and 4-item bottom nav."
+    },
+    {
+      "id": "B02",
+      "name": "AI 多笔草稿与确认",
+      "group": "core",
+      "brief": "Recreate the selected reference workflow faithfully on both devices. User 午饭35，网站推广20美元. Assistant 已整理好，确认后入账. One receipt draft grouping rows 午饭 ¥35.00 category饮食 tag午餐, 网站推广 US$20.00 secondary折合¥144.00 category其他 tag推广; edit pencil each. Heading待确认·2笔 and 2026年10月18日. Total¥179.00, primary确认入账, secondary修改草稿, manual link. Quote示例汇率 1 USD=7.20 CNY·报价10月16日, mock not live. Desktop use one comfortable-width conversation with receipt, not duplicate receipt in a second panel. No unconfirmed amounts counted in statistics."
+    },
+    {
+      "id": "B03",
+      "name": "自然语言查账与连续追问",
+      "group": "core",
+      "brief": "Conversation question 最近3个月外卖花了多少钱？ Read-only result dated 2026.07.18—2026.10.18 filter外卖. Main净支出¥1,386.00,支出¥1,450.00,退款¥64.00; 24条匹配账目. Clearly label按退款发生日抵减. Primary查看24条明细, secondary修改条件, one follow-up chip那上个月呢 and composer. No AI advice/budgets. Same content across devices, spacious desktop width and mobile hierarchy."
+    },
+    {
+      "id": "B04",
+      "name": "会话列表与来源标记",
+      "group": "core",
+      "brief": "Conversation history management. Page会话 with prominent新建会话, search会话搜索, recent groups今天/本周. Rows今天的记账 snippet已整理2笔草稿, 外卖花费 snippet最近3个月外卖净支出, 日常收支. Optional extension row微信会话 with small微信来源 badge, do not imply binding is live; mark on outer design caption微信行为为扩展草案. Each row supports overflow删除会话; quiet note删除会话不会删除已入账账目. No message composer on the list. Desktop left nav and generous grouped rows; mobile full list."
+    },
+    {
+      "id": "B05",
+      "name": "账目列表与组合筛选",
+      "group": "core",
+      "brief": "Ledger list账目 October2026. Primary记一笔; filter/search strip keyword 搜索备注或标签, date2026.10.01—2026.10.18, 类型全部, 类目全部, 标签全部 unselected filter, 原币全部. Show believable rows 午饭支出¥35.00 today饮食 午餐, 网站推广支出US$20.00折合¥144.00 today其他 推广, 商品退款退款US$30.00折合¥216.00 October18 linked original, 工资收入¥9,000.00 October10. Use badges/text + signs distinguish income/refund; don't add foreign original amounts directly. Desktop simple table with original+converted amounts, mobile grouped list with filter bottom-sheet trigger. Show currently filtered total clearly, do not claim all 4 rows match tag外卖; use unselected tag filter labelled标签 instead. Footer当前结果按CNY汇总. No account balance. Only账目active in navigation; no recentthreads on ledger page."
+    },
+    {
+      "id": "B06",
+      "name": "手动新增与编辑账目",
+      "group": "core",
+      "brief": "Standalone form directly usable without AI; no chat. Focused manual entry form记一笔 with segmented支出/收入, 支出 selected. Fields金额20.00 and原币种USD; date2026-10-18; 类目其他; 标签推广; 备注网站推广. FX section参考换算1USD=7.20CNY,折合¥144.00,来源ECB·示例报价2026-10-16; radio alternatives参考汇率/手填汇率/实际扣款. Primary核对并保存, secondary取消. Helper changing conversion fields requires reconfirmation. Desktop centered form with clear section headings; mobile 44px inputs and single column fits naturally, below-fold content can scroll, primary action visible. No wallets, attachments, banking accounts or keys. Income separate classification noted by tab. Historicalquote, unique3options, selected账目nav."
+    },
+    {
+      "id": "B07",
+      "name": "账目详情与关联退款",
+      "group": "core",
+      "brief": "Expense detail 网站推广, original spendingUS$100.00 confirmed CNY¥720.00 at7.20, original date2026-09-20. Original category其他 tag推广 and quote沿用原消费汇率（示例）. Refund action open: 关联退款 form原币退款USD30.00,发生日期2026-10-18,默认折合¥216.00; show remaining refundable US$100.00 before this refund, 本次后剩余US$70.00. Optional实际到账金额 edit link. Primary确认退款. Original category/tags inherited, refund not income; refunds belong refund date. Desktop detail + adjacent refund panel within one screen, mobile detail top then bottom-sheet refund. Main action for current task is refund, no simultaneous destructive primary. No priorrefunds; originalexpenseavailableUSD100 and afterthisrefund70; optionalactualsettlementemptyCNYfield; defaultfrozenconversion216."
+    },
+    {
+      "id": "B08",
+      "name": "统计与退款口径",
+      "group": "core",
+      "brief": "Statistics page统计 for2026年10月, data through10月18日. Monthly收入¥9,000.00 支出¥3,280.00 退款¥216.00 净支出¥3,064.00, labels prevent bank balance interpretation. Expense category bars饮食1200,运动680,穿搭900,其他500 sum3280. Trend chart 3 partial-week periods10.01–10.04=780,10.05–10.11=950,10.12–10.18=1550 gross expense, refund216 on third interval indicated separately. Provide text numbers alongside charts. Primary查看明细, month switch,按主币种CNY汇总 and发生日退款说明. Desktop open editorial chart layout, mobile summary then bars and chart with deliberate scroll, no tiny four-across cards. Expenseandrefundbarssidebysidefromzero,neverstacked; no recentconversationhistory."
+    },
+    {
+      "id": "B09",
+      "name": "类目维护与标签合并",
+      "group": "core",
+      "brief": "Settings subpage分类与标签. Categories section支出/收入 tab, selected支出 shows饮食 运动 穿搭 其他 未分类 and 添加类目. Tags section shows外卖 午餐 推广 运动装备, select午饭 and午餐 for merge preview into 午餐; note合并后关联账目统一使用“午餐”. Primary合并所选标签, secondary新增标签. Desktop two clearly separate open sections, mobile tabs类目/标签 with标签 active and a compact list of selected tag names for merge; a quiet visible类目 tab retains discoverability. No category nesting or AI automatic preference learning. Settingsbacklinkonly; no additionalsettingssubmenus."
+    },
+    {
+      "id": "B10",
+      "name": "回收站与永久删除确认",
+      "group": "core",
+      "brief": "Trash page回收站, deleted entries not included in statistics. Rows午饭¥35.00 and运动装备¥120.00 with恢复 and overflow. Current focused permanent-delete confirmation dialog/bottom sheet title彻底删除这笔账目？ body彻底删除后无法恢复 and entry午饭¥35.00; secondary保留, destructive彻底删除. Desktop modal on dimmed but readable trash list, mobile bottom sheet with clear contextual label. Don't show clear-all bulk destruction. Preserve reference styling and use red only for destructive button, orange for normal restore controls. Settingsbacklinkonly; no additionalsettingssubmenus."
+    },
+    {
+      "id": "B11",
+      "name": "设置与密钥状态",
+      "group": "core",
+      "brief": "Settings page设置. Main currency人民币CNY with lock icon已有账目，主币种已锁定; timezone北京时间Asia/Shanghai; language跟随浏览器 with简体中文/English choices; theme浅色/深色/跟随系统. AI sectionDeepSeek 已配置, model label使用部署配置, no actual key, no key input. Helpful lineAI不可用时仍可手动记账. Links分类与标签,导出与恢复,回收站. Optional微信入口 row 未启用 with label扩展设计 on outer board caption; do not show fake connected status or QR. Desktop grouped setting rows, mobile simple readable list with toggles only when meaningful. No multi-user account management."
+    },
+    {
+      "id": "B12",
+      "name": "导出备份与恢复预览",
+      "group": "core",
+      "brief": "Data page导出与恢复. CSV当前筛选导出; JSON完整备份 includes账目/类目/标签/设置/会话/换算信息 and excludes密钥. Restore flow currently at validated preview: file moni-backup-2026-10-17.json, valid format,账目128条 类目8个 标签16个 会话6个. Three steps校验预览→备份当前账本→确认替换, currently step1. Strong warning这是整本替换，不会合并账目; no direct destructive action until current backup saved. Primary备份当前账本并继续, secondary取消恢复. Desktop preview grouped within main data page, mobile single column and clear steps. No real file paths, API keys, owners, or actual uploaded data."
+    },
+    {
+      "id": "B13",
+      "name": "首次初始化",
+      "group": "core",
+      "brief": "First-use ledger initialization after authenticated owner verification. No app data or financial metrics displayed. Logo Moni, paper helper, title建立你的私人账本, status身份已验证. Main currency select人民币CNY with helper首笔正式账目后锁定, timezone北京时间Asia/Shanghai, language跟随浏览器. AI optional status未配置，稍后设置，不影响手动记账. Primary创建账本, secondary查看配置说明. No username/password registration, email fields, first anonymous visitor claiming ownership, billing or key entry. Desktop balanced full-page onboarding content at comfortable 520px width, mobile one column no bottom nav before initialization. 主币种terminology; timezoneexplainsrelativeperiodsanddoesnotchangehistoricdates."
+    },
+    {
+      "id": "B14",
+      "name": "访问受限与配置未完成",
+      "group": "core",
+      "brief": "Private app access gate, no ledger or conversation data displayed. Title暂时无法访问账本, paper helper holding small lock, message需要先完成访问权限配置。仅允许本人进入。 Status访问验证未完成, primary查看配置说明, secondary重新检查. Do not fake local login or let anonymous user set owner, show no API key field or financial history. Existing brand warm paper, orange, clear black outlines; desktop calm full-page centered 560px content, mobile same content natural responsive padding, no app nav and no generic stack trace or backend code."
+    },
+    {
+      "id": "B15",
+      "name": "缺少金额与汇率的待补草稿",
+      "group": "core",
+      "brief": "AI conversation with two incomplete drafts to demonstrate safe bookkeeping. User今天买了一双鞋，推广花了20美元. Assistant有2项需要补充，暂未入账. One receipt group row一双鞋 category穿搭 missing amount outlined field请输入金额, yellow金额待补 badge; row网站推广US$20.00 category其他 has当前无法获取适用汇率, options手填汇率 or填写实际人民币扣款, no invented converted sum. Primary保存 disabled until missing data filled; clear secondary手动补充, retry获取汇率 link for second row. No grand total from incomplete entries. Date today2026-10-18. Desktop conversation + editable receipt, mobile compact receipt with visible missing-field helpers. No fabricated money."
+    },
+    {
+      "id": "B16",
+      "name": "微信专用会话历史（扩展草案）",
+      "group": "extension",
+      "brief": "Proposed optional WeChat-source conversation view, label outer board微信扩展·交互草案·排期待定. Same Moni app, shared ledger, conversation named微信会话 with微信来源 small badge. Readable message 最近3个月外卖花了多少钱 and answer净支出¥1,386.00 period2026.07.18–2026.10.18 label外卖, supports follow-up那上个月呢 history. Top note来自微信的独立会话，可在网页查看历史. No active QR/login/connected claim, keys, or change to ledger ownership. Composer replaced by quiet read-only提示请在微信继续交流（网页续聊方式待定） clearly draft interaction. Primary查看相关账目. Desktop sidebar can show微信会话 selected alongside normal threads, mobile same dedicated conversation source context."
+    },
+    {
+      "id": "B17",
+      "name": "AI 不可用与回合状态组件",
+      "group": "states",
+      "brief": "A design-system state review board for the same selected app, not different style options. Pair desktop toast/inline/busy components with mobile equivalents. Exactly four labelled states: AI未配置→仍可手动记账 primary手动记账; 网络中断→本轮已中断，已保存的账目不受影响 primary重新尝试; 会话忙碌→正在处理上一条消息，不会重复提交 secondary等待完成; 查询无结果→未找到符合条件的账目 primary调整筛选. Show readable compact real UI fragments with example conversation context, not decorative empty boxes. No wrong claim没有发生消费. Design stable unique state labels, spinner for busy, no red for normal empty state. Do not add unrelated app screens or fake controls. AIunconfiguredandbusycomposersdisabled, nosendbuttons."
+    },
+    {
+      "id": "B18",
+      "name": "危险操作与失败恢复组件",
+      "group": "states",
+      "brief": "State component sheet pairing desktop modals with mobile bottom sheets, three distinct approved operations in the one coherent style. A: 删除会话？ body只删除会话，不删除已入账账目, cancel/删除会话. B: 恢复前最终确认 body当前账本备份已保存，确认用所选文件整本替换？ checkbox我已保存当前备份, secondary取消 primary确认替换; keep destructive emphasis clear, no automatic restore. C: 恢复失败 body当前账本保持完整，未进行替换, primary返回账本 secondary重试. Also tiny validation note有退款的原消费需要先处理关联退款. Clearly label states for review, show no fake keys or raw JSON. No bulk clear account button. Maintain contextual amounts rather than floating generic popups."
+    },
+    {
+      "id": "B19",
+      "name": "深色与英文代表页",
+      "group": "variant",
+      "brief": "Dark-theme English counterparts of the same read-only chat-query screen. Preserve layout/mascot/rounded Moni wordmark and orange primary style; warm dark brown#181414 surface#242020, cream#fff8e8 foreground, muted#cec2ae, orange#ff7956, no neon or glass. English UI text: My ledger, Conversation, Entries, Reports, Settings; userHow much did I spend on takeout in the last 3 months? resultNet spending CNY 1,386.00,Expenses CNY1,450.00,Refunds CNY64.00;18 Jul–18 Oct2026, tagTakeout,24 matching entries, primaryView24entries, followupWhat about last month? Text numbers large but not bank balance. Desktop nav and mobile nav consistent. Label outer board主题与语言示例. Do not add FX translations or other modules."
+    },
+    {
+      "id": "B20",
+      "name": "导出与恢复入口",
+      "group": "core",
+      "brief": "Dedicated Settings > 导出与恢复 page, no chat bubbles or composer. Desktop leftsidebar settingsactive; mobile settingsnavactive. Three clearly separated sections on one page, no nestedcards: 1账目CSV筛选then导出CSV, date2026-10-01至2026-10-18, types全部, note只导出当前筛选的已入账记录. 2完整备份JSON, secondary下载完整备份, includes全部账目、类目、标签、汇率、会话及账本设置; excludes密钥、登录身份与部署配置. 3从备份恢复,secondary选择JSON备份, helper先预览校验，再备份当前账本，最后确认整本替换. No destructive action on choosing a file, no import/mergeorbank sync. Primary导出CSV onlyoneorange; otherbuttonsoutlined. Desktop efficient readable two-column or widersectionlayout, mobile verticalscrollwithsameactions, labelsfit."
+    }
+  ],
+  "boardCount": 20,
+  "amendments": [
+    {
+      "id": "B05",
+      "revision": 4,
+      "change": "修正不匹配的标签筛选、分类汇总和移动端双选中态；非对话页移除会话历史。"
+    },
+    {
+      "id": "B06",
+      "revision": 2,
+      "change": "改为独立手动表单，三个换算选项唯一，参考汇率按发生日查询。"
+    },
+    {
+      "id": "B07",
+      "revision": 2,
+      "change": "移除虚构的既有退款，沿用原消费汇率，显示 CNY 216、剩余 USD 70，实际到账为可选 CNY。"
+    },
+    {
+      "id": "B08",
+      "revision": 3,
+      "change": "支出与退款采用从零点并列的柱形；非对话页移除会话历史。"
+    },
+    {
+      "id": "B09",
+      "revision": 2,
+      "change": "移除多余设置分栏，使用设置返回路径及类目、标签局部切换。"
+    },
+    {
+      "id": "B10",
+      "revision": 2,
+      "change": "统一设置返回路径，移除多余二级菜单，保留恢复和永久删除确认。"
+    },
+    {
+      "id": "B11",
+      "revision": 2,
+      "change": "语言改为跟随浏览器，主题继续跟随系统。"
+    },
+    {
+      "id": "B13",
+      "revision": 2,
+      "change": "统一主币种术语、浏览器语言及不改历史日期的时区说明。"
+    },
+    {
+      "id": "B17",
+      "revision": 2,
+      "change": "未配置和忙碌状态禁用输入与发送。"
+    }
+  ],
+  "activeManifest": "review-manifest.json"
+}

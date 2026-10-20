@@ -1,0 +1,59 @@
+diff --git a/dist/index.d.mts b/dist/index.d.mts
+index 604ab8f2d46b506bdb7f8ec3d513432adca740ba..2704b1b0582e39a50735fb7eefafdbc3bab3d5dc 100644
+--- a/dist/index.d.mts
++++ b/dist/index.d.mts
+@@ -234,6 +234,8 @@ declare const CDN_BASE_URL = "https://novac2c.cdn.weixin.qq.com/c2c";
+ /** Default bot_type value. */
+ declare const DEFAULT_BOT_TYPE = "3";
+ interface ApiClientOptions {
++  /** Transport override for bounded, authenticated edge runtimes. */
++  fetch?: typeof globalThis.fetch;
+   baseUrl?: string;
+   cdnBaseUrl?: string;
+   token?: string;
+diff --git a/dist/index.mjs b/dist/index.mjs
+index 3f14dcf78912f18ecf21942326c2ec1dc96baba4..22a4849d496075fa5cb2c492e0e3e59501aa3fb5 100644
+--- a/dist/index.mjs
++++ b/dist/index.mjs
+@@ -41,12 +41,14 @@ var ApiClient = class {
+ 	token;
+ 	channelVersion;
+ 	routeTag;
++	fetch;
+ 	constructor(opts = {}) {
+ 		this.baseUrl = opts.baseUrl ?? "https://ilinkai.weixin.qq.com";
+ 		this.cdnBaseUrl = opts.cdnBaseUrl ?? "https://novac2c.cdn.weixin.qq.com/c2c";
+ 		this.token = opts.token;
+ 		this.channelVersion = opts.channelVersion ?? "standalone-0.1.0";
+ 		this.routeTag = opts.routeTag;
++		this.fetch = opts.fetch ?? globalThis.fetch;
+ 	}
+ 	/** Update the bearer token (after QR login). */
+ 	setToken(token) {
+@@ -79,7 +81,7 @@ var ApiClient = class {
+ 		const controller = new AbortController();
+ 		const timer = setTimeout(() => controller.abort(), params.timeoutMs);
+ 		try {
+-			const res = await fetch(url.toString(), {
++			const res = await this.fetch(url.toString(), {
+ 				method: "POST",
+ 				headers,
+ 				body: params.body,
+@@ -173,7 +175,7 @@ var ApiClient = class {
+ 		const url = new URL(`ilink/bot/get_bot_qrcode?bot_type=${encodeURIComponent(bt)}`, base);
+ 		const headers = {};
+ 		if (this.routeTag) headers.SKRouteTag = this.routeTag;
+-		const res = await fetch(url.toString(), { headers });
++		const res = await this.fetch(url.toString(), { headers });
+ 		if (!res.ok) {
+ 			const body = await res.text().catch(() => "(unreadable)");
+ 			throw new Error(`Failed to fetch QR code: ${res.status} ${res.statusText}: ${body}`);
+@@ -192,7 +194,7 @@ var ApiClient = class {
+ 		const controller = new AbortController();
+ 		const timer = setTimeout(() => controller.abort(), QR_LONG_POLL_TIMEOUT_MS);
+ 		try {
+-			const res = await fetch(url.toString(), {
++			const res = await this.fetch(url.toString(), {
+ 				headers,
+ 				signal: controller.signal
+ 			});

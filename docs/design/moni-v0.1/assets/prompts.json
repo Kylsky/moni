@@ -1,0 +1,80 @@
+{
+  "tool": "built-in image_gen",
+  "transparent_background": true,
+  "date": "2026-10-18",
+  "assets": [
+    {
+      "id": "wordmark-on-light",
+      "file": "brand/wordmark-on-light.png",
+      "source": "reference/selected-mobile.png",
+      "prompt": "Use case: background-extraction. Asset type: Moni existingbrand wordmark forappheader. Edit target: attachedapprovedmobileUI. Extract ONLY the upper-left Moni wordmark, exacttext \"Moni\" (M uppercase,o n i lowercase), chunky roundedblackinkletterforms and smallorangedotabovei. Preserve the originalwordmarkcharacter,letterspacing andshape. RemoveChinese私人账本andALLotherUI,paperbackground,iconsandmascot. Faithful highresolutioncleanup ratherthan newlogoexploration. Darkink#171313 with orange#ff6038dot. Singlehorizontal logo onrealtransparentRGBA background, no whitebackplate/checkerboard/dropshadow/border. Targetcanvas1200x400, natural3:1landscape, wordmarkfillsabout85%width, evenminimaltransparentpadding. No additionaltext. Edgesclean for120pxwide appheader.",
+      "actualInputImages": [
+        "docs/design/moni-v0.1/reference/selected-mobile.png"
+      ]
+    },
+    {
+      "id": "wordmark-on-dark",
+      "file": "brand/wordmark-on-dark-v2.png",
+      "source": "boards/B19.png",
+      "prompt": "Edit this attachedtransparent Moni logo. ChangeONLY darkletterstoclean solidwarmivory#fff8e8,keeporangedotandEXACTlettershapesandspacing. Render flat solid fills with clean smoothly antialiased boundaries. The onlyopaque pixelsmustformtheFOURletterbodiesandorangeid ot. NO straywhitepixels, speckles, papergrain,residue,texture,outline,halo,orbackgroundanywhere, includinginsidelettero andbetweenletters. ExacttextMoni. TrueRGBAtransparency,bothlettero counterandalloutsidesfullytransparent. Keeporiginal3:1canvascomposition. Thisiscleanproductionwordmarkrecolor,nopapertexture. NO pageUI orlabels. Usecaseprecise-object-edit. Intendedheaderwidth94–118CSSpixels.",
+      "actualInputImages": [
+        "public/moni/brand/wordmark-on-light.png"
+      ]
+    },
+    {
+      "id": "assistant-writing",
+      "file": "illustrations/assistant-writing.png",
+      "source": "reference/selected-mobile.png",
+      "prompt": "Use case: background-extraction. Asset type: approvedMonireceiptassistant cutout. Edit target attachedselectedmobileUI. ExtractONLY the smallreceiptcharacter leftofassistantmessage: warmoff-whitepaperreceipt tiltedslightlycounterclockwise, blackhanddrawnoutline, two blackdoteeyes, gentlesmilingmouth, tinybrow/receiptmarks, brownhands, holdingthesameorangeblackoutlinedpencil onright, twosmallyellowaccentmarksabove. Preserveidentity,pose,facialexpressionandcolors EXACTLYasreference. No limbsornewfeaturesnotshown. Clean andenlargetheexistingillustration, donotredesign. RealtransparentRGBAbackground; papercharacterBODY staysopaque warmwhite. NO surroundingivorypage,whitehaloorrectangularbackplate,checkerboard,groundshadow,text,buttonsorUI. Target1024x1024, singlecompletecharactercenteredwithuniformapprox12%transparentmarginincludingpencilandaccents, nocomponentcropping.",
+      "actualInputImages": [
+        "docs/design/moni-v0.1/reference/selected-mobile.png"
+      ]
+    },
+    {
+      "id": "assistant-search",
+      "file": "illustrations/assistant-search.png",
+      "source": "boards/B17-r2.png",
+      "prompt": "Use case: background-extraction. Asset type: approvedMonireceiptassistantSEARCHpose. Edit targetattachedstateboard. Extract ONLY the receiptmascotfromFOURTHROW查询无结果, holdingblue-tintedmagnifyingglassonright. Preserveoffwhitepaperrectangletiltedleft, blackhanddrawnoutline, blackdoteeyes,gentlesmile,tinyreceiptmarks,brownhands,yellowaccentmarks; exactsameidentityandposeasfourthrow. RemoveeveryUIlabel,bubble,button,logoandbackground. Singlecharacter,notaspritesheetorredesign. RealtransparentRGBA, paperbodystaysopaque, lenssubtlepaleblue. No backplate,checkerboard,groundshadowortext. Target1024x1024 withuniformapprox12%transparentpadding, allmagnifyingglassandaccentsinsidecanvas.",
+      "actualInputImages": [
+        "docs/design/moni-v0.1/boards/B17-r2.png"
+      ]
+    },
+    {
+      "id": "assistant-warning",
+      "file": "illustrations/assistant-warning.png",
+      "source": "boards/B18.png",
+      "prompt": "Use case: background-extraction. Asset type: approvedMonireceiptassistantWARNINGpose. Edit targetattachedthreerowstateboard. ExtractONLY the worriedreceiptcharacterfromTHIRDROW恢复失败, with smallorangeexclamationbubbleupperright. Preserveoff-whitepaperbody,blackhanddrawnoutline,doteeyes,downturnedmouthandworriedeyebrows,brownhandsatbottomsides; sameoriginalcharacterandexpression. Faithfulcleanupandupscale,notanewmascot. RemoveallUItext,buttons,backgroundandothercharacters. SinglecompletecutoutonactualtransparentRGBA, paperbodyopaque, orangebubblepartofillustration. No extratext exceptexisting!insmallbubble, nocheckerboardorwhitebackplate, noshadow. Target1024x1024, even12%transparentmargin, fullbubblevisible.",
+      "actualInputImages": [
+        "docs/design/moni-v0.1/boards/B18.png"
+      ]
+    },
+    {
+      "id": "assistant-lock",
+      "file": "illustrations/assistant-lock.png",
+      "source": "boards/B14.png",
+      "prompt": "Use case: background-extraction. Asset type: approvedMonireceiptassistantACCESSpose. Edit targetattachedaccessgateboard. ExtractONLY the smilingreceiptmascot holdingyellowpadlockatright, fromleftPCscreen. Keepoffwhitepaperbodytiltedleft, blackhanddrawnoutline,doteeyes,gentlesmile,tinyreceiptmarks,brownhands and twoyellowaccentmarks. Preserveoriginalpose,padlockyellowfillblackkeyholeandoutline. Faithfulhighrescleanup, nonewdesign. RemoveALLUItext,panels,logosandpagebackground. RealtransparentRGBA, opaquecharacterbody, no floatingfunctionaliconsseparatefromcharacter. Target1024x1024, approx12%evenpadding, nopencil, nobackplate/checkerboard/groundshadow,textorbutton.",
+      "actualInputImages": [
+        "docs/design/moni-v0.1/boards/B14.png"
+      ]
+    },
+    {
+      "id": "assistant-backup",
+      "file": "illustrations/assistant-backup.png",
+      "source": "boards/B18.png",
+      "prompt": "Use case: background-extraction. Asset type: approvedMonireceiptassistantBACKUPpose. Edit targetattachedthreerowstateboard. ExtractONLY the smilingreceiptmascot fromSECONDROW恢复前最终确认 holdingyellowfilefolderatright. Preservepaperrectangletiltedleft, off-whitebody,blackhanddrawnoutline,doteeyes,smile,tinyreceiptmarks,brownhands,yellowaccentmarksandfolderblackoutline. Faithfulhighrescleanupnotredesign. RemoveALLUItext,controls,checkboxes,othermascotsandbackground. OnecompletecharacteronrealtransparentRGBA, paperandfolderopaque. Target1024x1024, uniform12%transparentmarginincludingfolder. No arrows/CSVlabel/buttons/shadow/checkerboard/backplate.",
+      "actualInputImages": [
+        "docs/design/moni-v0.1/boards/B18.png"
+      ]
+    },
+    {
+      "id": "assistant-delete",
+      "file": "illustrations/assistant-delete.png",
+      "source": "boards/B18.png",
+      "prompt": "Use case: background-extraction. Asset type: approvedMonireceiptassistantDELETEpose. Edit targetattachedthreerowstateboard. ExtractONLY smilingreceiptmascotfromFIRSTROW删除会话 holdinglightgraytrashbinatright. Keepoff-whitepaperbodytiltedleft,blackhanddrawnoutline,doteeyes,smile,tinyreceiptmarks,brownhands,yellowaccentmarks,blackoutlinedbinwithgrayfill. Preserveexactapprovedidentityandpose, faithfulhighrescleanupnotredesign. No UI,text,othermascots,buttonsorsurroundingbackground. SinglecompletecharacteronrealtransparentRGBA, opaquebodyandbin. Target1024x1024 even12%transparentmargin. No extradecorations,groundshadow,checkerboardorwhitebackplate.",
+      "actualInputImages": [
+        "docs/design/moni-v0.1/boards/B18.png"
+      ]
+    }
+  ],
+  "note": "来源路径相对于 docs/design/moni-v0.1；深色字标以浅色独立字标为编辑目标，沿用批准配色。"
+}

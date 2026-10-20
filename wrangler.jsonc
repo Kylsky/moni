@@ -1,0 +1,48 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "moni",
+  "main": "src/server.ts",
+  "compatibility_date": "2026-08-11",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": true,
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "moni",
+      "migrations_dir": "migrations","database_id": "b814bbf0-7b55-48d1-bc5d-1501182e19b0"
+    }
+  ],
+  "durable_objects": {
+    "bindings": [
+      { "name": "CONVERSATIONS", "class_name": "Conversation" },
+      { "name": "WECHAT", "class_name": "WechatBot" }
+    ]
+  },
+  "migrations": [
+    { "tag": "v1", "new_sqlite_classes": ["Conversation"] },
+    { "tag": "v2", "new_sqlite_classes": ["WechatBot"] }
+  ],
+  "observability": {
+    "enabled": true
+  },
+  "upload_source_maps": true,
+  "env": {
+    "preview": {
+      "name": "moni-preview",
+      "workers_dev": true,
+      "d1_databases": [
+        {
+          "binding": "DB",
+          "database_name": "moni-preview",
+          "migrations_dir": "migrations"
+        }
+      ],
+      "durable_objects": {
+        "bindings": [
+          { "name": "CONVERSATIONS", "class_name": "Conversation" },
+          { "name": "WECHAT", "class_name": "WechatBot" }
+        ]
+      }
+    }
+  }
+}

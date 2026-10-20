@@ -1,0 +1,341 @@
+[
+  {
+    "board": "B01",
+    "source": "docs/design/moni-v0.1/boards/B01.png",
+    "sourcePixels": [1632, 964],
+    "implementation": [
+      {
+        "path": "docs/verification/screenshots/s6-new-chat-pc.png",
+        "pixels": [1584, 1126]
+      },
+      {
+        "path": "docs/verification/screenshots/s6-new-chat-mobile.png",
+        "pixels": [429, 928]
+      }
+    ],
+    "comparison": "docs/verification/design-comparisons/B01.png",
+    "notes": "Dynamic synthetic records are independent; scroll detail captures supplement long pages.",
+    "focusedComparison": "docs/verification/design-comparisons/B01-mobile-focus.png",
+    "sourceFocusCrop": [1199, 104, 1610, 944]
+  },
+  {
+    "board": "B02",
+    "source": "docs/design/moni-v0.1/boards/B02.png",
+    "sourcePixels": [1855, 848],
+    "implementation": [
+      {
+        "path": "docs/verification/screenshots/s4-drafts-pc.png",
+        "pixels": [1584, 1126]
+      },
+      {
+        "path": "docs/verification/screenshots/s4-drafts-mobile.png",
+        "pixels": [429, 928]
+      }
+    ],
+    "comparison": "docs/verification/design-comparisons/B02.png",
+    "notes": "Overview only. Dynamic synthetic records and long-flow scroll positions differ; focused regions remain separate."
+  },
+  {
+    "board": "B03",
+    "source": "docs/design/moni-v0.1/boards/B03.png",
+    "sourcePixels": [1632, 964],
+    "implementation": [
+      {
+        "path": "docs/verification/screenshots/s4-query-pc.png",
+        "pixels": [1584, 1126]
+      },
+      {
+        "path": "docs/verification/screenshots/s4-query-mobile.png",
+        "pixels": [429, 928]
+      }
+    ],
+    "comparison": "docs/verification/design-comparisons/B03.png",
+    "notes": "Overview only. Dynamic synthetic records and long-flow scroll positions differ; focused regions remain separate.",
+    "focusedComparison": "docs/verification/design-comparisons/B03-mobile-focus.png",
+    "sourceFocusCrop": [1199, 104, 1610, 944]
+  },
+  {
+    "board": "B04",
+    "source": "docs/design/moni-v0.1/boards/B04.png",
+    "sourcePixels": [1632, 963],
+    "implementation": [
+      {
+        "path": "docs/verification/screenshots/s4-conversations-pc.png",
+        "pixels": [1584, 1126]
+      },
+      {
+        "path": "docs/verification/screenshots/s4-conversations-mobile.png",
+        "pixels": [429, 928]
+      }
+    ],
+    "comparison": "docs/verification/design-comparisons/B04.png",
+    "notes": "Overview only. Dynamic synthetic records and long-flow scroll positions differ; focused regions remain separate."
+  },
+  {
+    "board": "B05",
+    "source": "docs/design/moni-v0.1/boards/B05-r4.png",
+    "sourcePixels": [1632, 964],
+    "implementation": [
+      {
+        "path": "docs/verification/screenshots/s2-filters-pc.png",
+        "pixels": [1584, 1126]
+      },
+      {
+        "path": "docs/verification/screenshots/s2-filters-mobile.png",
+        "pixels": [429, 928]
+      }
+    ],
+    "comparison": "docs/verification/design-comparisons/B05.png",
+    "notes": "Overview only. Dynamic synthetic records and long-flow scroll positions differ; focused regions remain separate."
+  },
+  {
+    "board": "B06",
+    "source": "docs/design/moni-v0.1/boards/B06-r2.png",
+    "sourcePixels": [1632, 964],
+    "implementation": [
+      {
+        "path": "docs/verification/screenshots/s3-reference-pc-form.png",
+        "pixels": [1584, 1126]
+      },
+      {
+        "path": "docs/verification/screenshots/s3-reference-mobile-form.png",
+        "pixels": [429, 928]
+      }
+    ],
+    "comparison": "docs/verification/design-comparisons/B06.png",
+    "notes": "Overview only. Dynamic synthetic records and long-flow scroll positions differ; focused regions remain separate.",
+    "focusedComparison": "docs/verification/design-comparisons/B06-mobile-focus.png",
+    "sourceFocusCrop": [1199, 104, 1610, 944]
+  },
+  {
+    "board": "B07",
+    "source": "docs/design/moni-v0.1/boards/B07-r2.png",
+    "sourcePixels": [1632, 964],
+    "implementation": [
+      {
+        "path": "docs/verification/screenshots/s3-foreign-refund-pc.png",
+        "pixels": [1584, 1126]
+      },
+      {
+        "path": "docs/verification/screenshots/s3-foreign-refund-mobile.png",
+        "pixels": [429, 928]
+      }
+    ],
+    "comparison": "docs/verification/design-comparisons/B07.png",
+    "notes": "Overview only. Dynamic synthetic records and long-flow scroll positions differ; focused regions remain separate.",
+    "focusedComparison": "docs/verification/design-comparisons/B07-mobile-focus.png",
+    "sourceFocusCrop": [1199, 104, 1610, 944]
+  },
+  {
+    "board": "B08",
+    "source": "docs/design/moni-v0.1/boards/B08-r3.png",
+    "sourcePixels": [1855, 848],
+    "implementation": [
+      {
+        "path": "docs/verification/screenshots/s3-reports-pc.png",
+        "pixels": [1584, 1126]
+      },
+      {
+        "path": "docs/verification/screenshots/s3-reports-mobile.png",
+        "pixels": [429, 928]
+      }
+    ],
+    "comparison": "docs/verification/design-comparisons/B08.png",
+    "notes": "Overview only. Dynamic synthetic records and long-flow scroll positions differ; focused regions remain separate."
+  },
+  {
+    "board": "B09",
+    "source": "docs/design/moni-v0.1/boards/B09-r2.png",
+    "sourcePixels": [1855, 848],
+    "implementation": [
+      {
+        "path": "docs/verification/screenshots/s2-taxonomy-pc.png",
+        "pixels": [1584, 1126]
+      },
+      {
+        "path": "docs/verification/screenshots/s2-taxonomy-mobile-tags.png",
+        "pixels": [429, 928]
+      }
+    ],
+    "comparison": "docs/verification/design-comparisons/B09.png",
+    "notes": "Overview only. Dynamic synthetic records and long-flow scroll positions differ; focused regions remain separate."
+  },
+  {
+    "board": "B10",
+    "source": "docs/design/moni-v0.1/boards/B10-r2.png",
+    "sourcePixels": [1632, 964],
+    "implementation": [
+      {
+        "path": "docs/verification/screenshots/s2-trash-pc-confirmation.png",
+        "pixels": [1584, 1126]
+      },
+      {
+        "path": "docs/verification/screenshots/s2-trash-mobile-confirmation.png",
+        "pixels": [429, 928]
+      }
+    ],
+    "comparison": "docs/verification/design-comparisons/B10.png",
+    "notes": "Overview only. Dynamic synthetic records and long-flow scroll positions differ; focused regions remain separate."
+  },
+  {
+    "board": "B11",
+    "source": "docs/design/moni-v0.1/boards/B11-r2.png",
+    "sourcePixels": [1855, 848],
+    "implementation": [
+      {
+        "path": "docs/verification/screenshots/s6-settings-pc.png",
+        "pixels": [1584, 1126]
+      },
+      {
+        "path": "docs/verification/screenshots/s6-settings-mobile.png",
+        "pixels": [429, 928]
+      }
+    ],
+    "comparison": "docs/verification/design-comparisons/B11.png",
+    "notes": "Overview only. Dynamic synthetic records and long-flow scroll positions differ; focused regions remain separate."
+  },
+  {
+    "board": "B12",
+    "source": "docs/design/moni-v0.1/boards/B12.png",
+    "sourcePixels": [1632, 964],
+    "implementation": [
+      {
+        "path": "docs/verification/screenshots/s6-restore-preview-pc.png",
+        "pixels": [1584, 1126]
+      },
+      {
+        "path": "docs/verification/screenshots/s6-restore-preview-mobile.png",
+        "pixels": [429, 928]
+      }
+    ],
+    "comparison": "docs/verification/design-comparisons/B12.png",
+    "notes": "Overview only. Dynamic synthetic records and long-flow scroll positions differ; focused regions remain separate.",
+    "focusedComparison": "docs/verification/design-comparisons/B12-mobile-focus.png",
+    "sourceFocusCrop": [1199, 104, 1610, 944]
+  },
+  {
+    "board": "B13",
+    "source": "docs/design/moni-v0.1/boards/B13-r2.png",
+    "sourcePixels": [1632, 963],
+    "implementation": [
+      {
+        "path": "docs/verification/screenshots/s1-initialize-desktop.png",
+        "pixels": [1584, 1126]
+      },
+      {
+        "path": "docs/verification/screenshots/s1-initialize-mobile.png",
+        "pixels": [429, 928]
+      }
+    ],
+    "comparison": "docs/verification/design-comparisons/B13.png",
+    "notes": "Overview only. Dynamic synthetic records and long-flow scroll positions differ; focused regions remain separate."
+  },
+  {
+    "board": "B14",
+    "source": "docs/design/moni-v0.1/boards/B14.png",
+    "sourcePixels": [1855, 848],
+    "implementation": [
+      {
+        "path": "docs/verification/screenshots/s6-restricted-pc.png",
+        "pixels": [1440, 1024]
+      },
+      {
+        "path": "docs/verification/screenshots/s6-restricted-mobile.png",
+        "pixels": [1024, 2216]
+      }
+    ],
+    "comparison": "docs/verification/design-comparisons/B14.png",
+    "notes": "Overview only. Dynamic synthetic records and long-flow scroll positions differ; focused regions remain separate.",
+    "focusedComparison": "docs/verification/design-comparisons/B14-mobile-focus.png",
+    "sourceFocusCrop": [1400, 42, 1836, 831]
+  },
+  {
+    "board": "B15",
+    "source": "docs/design/moni-v0.1/boards/B15.png",
+    "sourcePixels": [1632, 964],
+    "implementation": [
+      {
+        "path": "docs/verification/screenshots/s6-incomplete-pc.png",
+        "pixels": [1584, 1126]
+      },
+      {
+        "path": "docs/verification/screenshots/s6-incomplete-mobile.png",
+        "pixels": [429, 928]
+      }
+    ],
+    "comparison": "docs/verification/design-comparisons/B15.png",
+    "notes": "Dynamic synthetic records are independent; scroll detail captures supplement long pages.",
+    "focusedComparison": "docs/verification/design-comparisons/B15-mobile-focus.png",
+    "sourceFocusCrop": [1199, 104, 1610, 944]
+  },
+  {
+    "board": "B17",
+    "source": "docs/design/moni-v0.1/boards/B17-r2.png",
+    "sourcePixels": [1633, 963],
+    "implementation": [
+      {
+        "path": "docs/verification/screenshots/s6-ai-unconfigured-pc.png",
+        "pixels": [1440, 1024]
+      },
+      {
+        "path": "docs/verification/screenshots/s6-ai-unconfigured-mobile.png",
+        "pixels": [1024, 2216]
+      }
+    ],
+    "comparison": "docs/verification/design-comparisons/B17.png",
+    "notes": "Overview only. Dynamic synthetic records and long-flow scroll positions differ; focused regions remain separate."
+  },
+  {
+    "board": "B18",
+    "source": "docs/design/moni-v0.1/boards/B18.png",
+    "sourcePixels": [1633, 963],
+    "implementation": [
+      {
+        "path": "docs/verification/screenshots/s5-restore-confirm-pc.png",
+        "pixels": [1584, 1126]
+      },
+      {
+        "path": "docs/verification/screenshots/s5-restore-confirm-mobile.png",
+        "pixels": [429, 928]
+      }
+    ],
+    "comparison": "docs/verification/design-comparisons/B18.png",
+    "notes": "Overview only. Dynamic synthetic records and long-flow scroll positions differ; focused regions remain separate."
+  },
+  {
+    "board": "B19",
+    "source": "docs/design/moni-v0.1/boards/B19.png",
+    "sourcePixels": [1632, 964],
+    "implementation": [
+      {
+        "path": "docs/verification/screenshots/s6-dark-query-pc.png",
+        "pixels": [1584, 1126]
+      },
+      {
+        "path": "docs/verification/screenshots/s6-dark-query-mobile.png",
+        "pixels": [429, 928]
+      }
+    ],
+    "comparison": "docs/verification/design-comparisons/B19.png",
+    "notes": "Dynamic synthetic records are independent; scroll detail captures supplement long pages.",
+    "focusedComparison": "docs/verification/design-comparisons/B19-mobile-focus.png",
+    "sourceFocusCrop": [1199, 104, 1610, 944]
+  },
+  {
+    "board": "B20",
+    "source": "docs/design/moni-v0.1/boards/B20.png",
+    "sourcePixels": [1633, 963],
+    "implementation": [
+      {
+        "path": "docs/verification/screenshots/s6-backup-pc.png",
+        "pixels": [1584, 1126]
+      },
+      {
+        "path": "docs/verification/screenshots/s6-backup-mobile.png",
+        "pixels": [429, 928]
+      }
+    ],
+    "comparison": "docs/verification/design-comparisons/B20.png",
+    "notes": "Overview only. Dynamic synthetic records and long-flow scroll positions differ; focused regions remain separate."
+  }
+]

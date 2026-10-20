@@ -1,0 +1,61 @@
+{
+  "repository": "https://github.com/TanStack/ai",
+  "official_installation_guide": "https://tanstack.com/ai/latest/docs/getting-started/agent-skills",
+  "commit": "85c2956c68f3226ef409b3a4e54d5be82198931e",
+  "downloaded_on": "2026-10-18",
+  "installation": "Official skill-installer GitHub download; SDK packages not installed.",
+  "license_source": "https://raw.githubusercontent.com/TanStack/ai/85c2956c68f3226ef409b3a4e54d5be82198931e/LICENSE",
+  "license_file": "LICENSE",
+  "skills": [
+    {
+      "name": "tanstack-ai",
+      "upstream_path": "skills/tanstack-ai",
+      "installed_path": ".agents/skills/tanstack-ai",
+      "files_sha256": {
+        "SKILL.md": "a77691e91778f6c6d06669377e54790320c2ccbb1d77684fb495786f019e8767"
+      }
+    },
+    {
+      "name": "ai-core",
+      "upstream_path": "packages/ai/skills/ai-core",
+      "installed_path": ".agents/skills/ai-core",
+      "files_sha256": {
+        "SKILL.md": "d69011d75ea88d76471257b7165796d9502e1fc4dd2e85a101f9314e991d0681",
+        "adapter-configuration/SKILL.md": "d33fa4870a28729c1b36dd150648d50280176c03bb0f1ef3d66f1dacb816b796",
+        "adapter-configuration/references/anthropic-adapter.md": "11b82a5dfb7e3878db8ba6b8e391e115b177c7b3c6bfd8b9ca03254952e79ea7",
+        "adapter-configuration/references/byteplus-adapter.md": "d220f2f7983e64f99f023df035a13598c5bbc73dc7058ceeaadb9977663c43f1",
+        "adapter-configuration/references/gemini-adapter.md": "e5ba2a38f1ed9b16f90f786d1b501e9dc32a8f5f2ef952d2e712ff7ba2d17686",
+        "adapter-configuration/references/grok-adapter.md": "8e744ff3d40c11385e209a54af1c37732e3bc0bc5129320e5a29eceb0a588462",
+        "adapter-configuration/references/groq-adapter.md": "f7d76f59e5f14fcec4805deda1239d2984c10dfcadc87d043caf6de9c09bd056",
+        "adapter-configuration/references/ollama-adapter.md": "f1cccf72e0553ff597f3a049a33d9e544a1a80fee5b5c5e97f66f4ab79313ad4",
+        "adapter-configuration/references/openai-adapter.md": "bc72fa874fc2b21fcde7c0fa11192733edd8ae259840f2a85602bd277a6c4e8c",
+        "adapter-configuration/references/openrouter-adapter.md": "08d1a45239a42ab189079f58998b23b65115ae2d83ad0de702c78fc48a46c848",
+        "ag-ui-protocol/SKILL.md": "c6cbca5b842fc27048cf30a5242bba97a0886bf5085bf987f2f26b33e7535f48",
+        "chat-experience/SKILL.md": "f2f2766f5066f266eb0c571c8bb396dec4595d8381fd410fd94e5fd24425b481",
+        "client-persistence/SKILL.md": "d815f1374824cda545bca9760b814459a9f366f56363519776922a8d6d0666f4",
+        "custom-backend-integration/SKILL.md": "7c8ad1eca884aa93fc390467442f91b9e89c1612b432ecf07e9d4b8d92433ca4",
+        "debug-logging/SKILL.md": "d39ed80fa2c62d6673e822702c5121b7e26851f6127960e7412ad178468d7979",
+        "locks/SKILL.md": "36284387bd20595f3aebf7a90a0f68775b8d7f10848e6920f09e06a268162dcd",
+        "media-generation/SKILL.md": "0329157d778a9521347b568192468bc7753016fea3e5465016a1ebaa0bad9475",
+        "middleware/SKILL.md": "621882e064f52271167af1381723814b5a43a4289af88a7c20a667194bc77f69",
+        "structured-outputs/SKILL.md": "a4ee5fbb4e3b5a9386a29e9e8cc76c2916d7386d018b1390d4c2f7193df8ea70",
+        "tool-calling/SKILL.md": "da3b498a491a754883f0baef7a5271ffbbee593e1276a16f005a4136f8e418d9"
+      }
+    },
+    {
+      "name": "ai-persistence",
+      "upstream_path": "packages/ai-persistence/skills/ai-persistence",
+      "installed_path": ".agents/skills/ai-persistence",
+      "files_sha256": {
+        "SKILL.md": "4508322a41a4d3437fc8027fac7da4aa2229d48e0f307c8615465e61338551ec",
+        "build-cloudflare-adapter/SKILL.md": "3941b1de3bd52a6cbc0a98adca4bcc0a1704c450b011c6a7980eadb934097e40",
+        "build-cloudflare-artifact-store/SKILL.md": "6a0ec04f66d698090d3f60b089ebffa98446c75fe6fb1a1052eec2ff05e219d1",
+        "build-custom-adapter/SKILL.md": "5ba1e701d90ac431eb95d0d6b2c93f5530e49986db24e47ffb318014cb0c5a8c",
+        "build-drizzle-adapter/SKILL.md": "005f1b274da5cd93310ba74886a85e172dc43fd1cb9ccf0a60b724654a8b8e0a",
+        "build-prisma-adapter/SKILL.md": "67aaa19f90177a6aa79954c44c62ddf9ebf768ebe96b888350f3d006e50b97c3",
+        "server/SKILL.md": "c1f39cde49edb809d3b711d8cbf027736468adb97d3212c00f11d89f14b46b64",
+        "stores/SKILL.md": "a4e01b1d0b0dae188cd0ee170c07f4ec90ddd74e12114f886a74f1a5703ae23e"
+      }
+    }
+  ]
+}

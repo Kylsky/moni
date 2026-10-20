@@ -1,0 +1,16 @@
+export const limits = {
+  moneyMinor: 9_000_000_000_000,
+  inputCharacters: 4_000,
+  noteCharacters: 2_000,
+  requestBytes: 64 * 1024,
+  backupBytes: 10 * 1024 * 1024,
+  backupRecords: 100_000,
+  historyPageMessages: 50,
+  historyMessageBytes: 256 * 1024,
+  contextTokens: 16000,
+  recentContextTokens: 8000,
+  summaryTokens: 2500,
+  contextBytes: 32 * 1024,
+  runMilliseconds: 90_000,
+  restoreLockMilliseconds: 5 * 60_000,
+} as const;

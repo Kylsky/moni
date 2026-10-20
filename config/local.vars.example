@@ -1,0 +1,13 @@
+# Local development only: copy to the ignored .dev.vars in the project root.
+# Keep this example outside Cloudflare's automatic deploy-secret discovery.
+# Never put real values in this file. Cloud encryption keys use Worker Secrets; model credentials can be configured on the web.
+AI_API_KEY=""
+AI_BASE_URL=""
+AI_MODEL=""
+ACCESS_ISSUER=""
+ACCESS_AUDIENCE=""
+OWNER_SUBJECT=""
+# Generated automatically on cloud deploy; encrypts web-configured model credentials.
+CONFIG_ENCRYPTION_KEY=""
+# Optional: 64 random hex characters; encrypts WeChat credentials on the server.
+WECHAT_SECRET=""

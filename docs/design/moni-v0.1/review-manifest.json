@@ -1,0 +1,286 @@
+{
+  "title": "Moni v0.1 双端 UI 审查",
+  "date": "2026-10-18",
+  "status": "approved_for_asset_extraction",
+  "assetExtraction": "completed",
+  "assetManifest": "assets/manifest.json",
+  "businessImplementation": "not_started",
+  "reference": "reference/selected-mobile.png",
+  "dataNotice": "全部为虚构示例。各画板为独立场景，不表示同一实际账本的同一数据快照。",
+  "dimensionNotice": "画板标注为目标逻辑视口，生成位图不等于精确像素规格。不得直接裁切拉伸成页面或生产素材。",
+  "groups": {
+    "core": "首版流程",
+    "extension": "微信扩展草案",
+    "states": "状态与确认",
+    "variant": "主题与语言"
+  },
+  "boards": [
+    {
+      "id": "B01",
+      "name": "新会话与手动入口",
+      "group": "core",
+      "file": "boards/B01.png",
+      "revision": 1,
+      "focus": [
+        "记账与查账共用一个入口，手动记账随时可达。",
+        "检查示例问题、输入框和手动入口是否一眼能找到。"
+      ]
+    },
+    {
+      "id": "B02",
+      "name": "AI 多笔草稿与确认",
+      "group": "core",
+      "file": "boards/B02.png",
+      "revision": 1,
+      "focus": [
+        "CNY 35 + USD 20 × 7.20 = CNY 179；确认前为草稿。",
+        "原币与折合金额同时展示；报价日期与发生日分开。"
+      ]
+    },
+    {
+      "id": "B03",
+      "name": "自然语言查账与连续追问",
+      "group": "core",
+      "file": "boards/B03.png",
+      "revision": 1,
+      "focus": [
+        "滚动三个月：2026-07-18 至 2026-10-18。",
+        "支出 1,450 − 退款 64 = 净支出 1,386；可查 24 条明细并连续追问。"
+      ]
+    },
+    {
+      "id": "B04",
+      "name": "会话列表与来源标记",
+      "group": "core",
+      "file": "boards/B04.png",
+      "revision": 1,
+      "focus": [
+        "会话独立保存，新建、切换和删除会话。",
+        "微信行属于扩展草案；删除会话不删除已入账账目。"
+      ]
+    },
+    {
+      "id": "B05",
+      "name": "账目列表与组合筛选",
+      "group": "core",
+      "file": "boards/B05-r4.png",
+      "revision": 4,
+      "focus": [
+        "四笔示例按 CNY 分别汇总：收入 9,000、支出 179、退款 216、净支出 −37。",
+        "日期、类型、类目、标签、关键词和原币筛选；手机收起次要筛选。"
+      ]
+    },
+    {
+      "id": "B06",
+      "name": "手动新增与编辑账目",
+      "group": "core",
+      "file": "boards/B06-r2.png",
+      "revision": 2,
+      "focus": [
+        "独立表单，不依赖 AI；新增、修改和收入录入复用。",
+        "参考汇率、手填汇率、实际扣款三个入口；改变折算依据时重新核对金额。"
+      ]
+    },
+    {
+      "id": "B07",
+      "name": "账目详情与关联退款",
+      "group": "core",
+      "file": "boards/B07-r2.png",
+      "revision": 2,
+      "focus": [
+        "原消费 USD 100 按 7.20 入账，本次退款 USD 30 折合 CNY 216。",
+        "可退金额由 USD 100 变为 USD 70；实际收到人民币为选填覆盖项。"
+      ]
+    },
+    {
+      "id": "B08",
+      "name": "统计与退款口径",
+      "group": "core",
+      "file": "boards/B08-r3.png",
+      "revision": 3,
+      "focus": [
+        "支出 3,280 − 退款 216 = 净支出 3,064；收入独立展示。",
+        "支出与退款从零点并列绘制；类目分布与账目明细相连。"
+      ]
+    },
+    {
+      "id": "B09",
+      "name": "类目维护与标签合并",
+      "group": "core",
+      "file": "boards/B09-r2.png",
+      "revision": 2,
+      "focus": [
+        "支出、收入类目分开维护；手机以类目／标签切换。",
+        "午饭与午餐合并到午餐，合并前显示目标标签与影响。"
+      ]
+    },
+    {
+      "id": "B10",
+      "name": "回收站与永久删除确认",
+      "group": "core",
+      "file": "boards/B10-r2.png",
+      "revision": 2,
+      "focus": [
+        "删除的账目不计入统计，可从回收站恢复。",
+        "彻底删除必须再次确认，并显示具体账目。"
+      ]
+    },
+    {
+      "id": "B11",
+      "name": "设置与密钥状态",
+      "group": "core",
+      "file": "boards/B11-r2.png",
+      "revision": 2,
+      "focus": [
+        "主币种在有正式账目后锁定；语言跟随浏览器，主题跟随系统。",
+        "AI 只显示配置状态，不输入或展示密钥；微信入口为扩展提示。"
+      ]
+    },
+    {
+      "id": "B12",
+      "name": "导出备份与恢复预览",
+      "group": "core",
+      "file": "boards/B12.png",
+      "revision": 1,
+      "focus": [
+        "恢复先校验预览，再备份当前账本，最后确认整本替换。",
+        "预览包含账目、类目、标签、会话数量；没有直接合并或覆盖按钮。"
+      ]
+    },
+    {
+      "id": "B13",
+      "name": "首次初始化",
+      "group": "core",
+      "file": "boards/B13-r2.png",
+      "revision": 2,
+      "focus": [
+        "身份验证通过后初始化：主币种、时区、语言。",
+        "AI 可稍后配置；时区不改写历史记账日期。"
+      ]
+    },
+    {
+      "id": "B14",
+      "name": "访问受限与配置未完成",
+      "group": "core",
+      "file": "boards/B14.png",
+      "revision": 1,
+      "focus": [
+        "访问验证或必要配置未完成时，展示受限页。",
+        "不展示私人账目、会话或密钥；无本地登录及抢占账本入口。"
+      ]
+    },
+    {
+      "id": "B15",
+      "name": "缺少金额与汇率的待补草稿",
+      "group": "core",
+      "file": "boards/B15.png",
+      "revision": 1,
+      "focus": [
+        "缺少金额和适用汇率时，保留待补草稿。",
+        "不猜金额、不生成不完整合计；补齐前禁用入账。"
+      ]
+    },
+    {
+      "id": "B16",
+      "name": "微信专用会话历史（扩展草案）",
+      "group": "extension",
+      "file": "boards/B16.png",
+      "revision": 1,
+      "focus": [
+        "共用账本，微信来源的独立会话；网页展示历史。",
+        "交互及排期待定；此处的网页只读方案供审查，不视为已选定或已接入。"
+      ]
+    },
+    {
+      "id": "B17",
+      "name": "AI 不可用与回合状态组件",
+      "group": "states",
+      "file": "boards/B17-r2.png",
+      "revision": 2,
+      "focus": [
+        "AI 未配置、网络中断、会话忙碌、查询无结果四组状态。",
+        "未配置与处理中禁用发送；查询无结果不等于实际没有消费。"
+      ]
+    },
+    {
+      "id": "B18",
+      "name": "危险操作与失败恢复组件",
+      "group": "states",
+      "file": "boards/B18.png",
+      "revision": 1,
+      "focus": [
+        "删除会话、恢复前确认、恢复失败三类弹窗及退款关联校验。",
+        "保存当前备份后才能确认替换；失败不产生部分替换。"
+      ]
+    },
+    {
+      "id": "B19",
+      "name": "深色与英文代表页",
+      "group": "variant",
+      "file": "boards/B19.png",
+      "revision": 1,
+      "focus": [
+        "深色与英文的双端代表页，沿用同一记账与查询语义。",
+        "检查深色层级和长英文换行；其他页面复用同一主题与文案规则。"
+      ]
+    },
+    {
+      "id": "B20",
+      "name": "导出与恢复入口",
+      "group": "core",
+      "file": "boards/B20.png",
+      "revision": 1,
+      "focus": [
+        "当前筛选导出 CSV、整本下载 JSON、选择备份恢复。",
+        "JSON 不含密钥、登录身份和部署配置；选择文件后先进入预览。"
+      ]
+    }
+  ],
+  "reviewCorrections": [
+    {
+      "id": "B05",
+      "revision": 4,
+      "change": "修正不匹配的标签筛选、分类汇总和移动端双选中态；非对话页移除会话历史。"
+    },
+    {
+      "id": "B06",
+      "revision": 2,
+      "change": "改为独立手动表单，三个换算选项唯一，参考汇率按发生日查询。"
+    },
+    {
+      "id": "B07",
+      "revision": 2,
+      "change": "移除虚构的既有退款，沿用原消费汇率，显示 CNY 216、剩余 USD 70，实际到账为可选 CNY。"
+    },
+    {
+      "id": "B08",
+      "revision": 3,
+      "change": "支出与退款采用从零点并列的柱形；非对话页移除会话历史。"
+    },
+    {
+      "id": "B09",
+      "revision": 2,
+      "change": "移除多余设置分栏，使用设置返回路径及类目、标签局部切换。"
+    },
+    {
+      "id": "B10",
+      "revision": 2,
+      "change": "统一设置返回路径，移除多余二级菜单，保留恢复和永久删除确认。"
+    },
+    {
+      "id": "B11",
+      "revision": 2,
+      "change": "语言改为跟随浏览器，主题继续跟随系统。"
+    },
+    {
+      "id": "B13",
+      "revision": 2,
+      "change": "统一主币种术语、浏览器语言及不改历史日期的时区说明。"
+    },
+    {
+      "id": "B17",
+      "revision": 2,
+      "change": "未配置和忙碌状态禁用输入与发送。"
+    }
+  ]
+}

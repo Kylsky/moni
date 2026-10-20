@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-18",
+  "status": "static_design_checks_passed",
+  "activeBoards": 20,
+  "archivedBoards": 12,
+  "existingFilesUnchanged": 187,
+  "addedFiles": 40,
+  "allNewFilesWithinDesignDirectory": true,
+  "pngCopiesMatchGenerationOutputs": true,
+  "mockArithmeticAssertions": 7,
+  "browser": {
+    "galleryOnly": true,
+    "categoryFilter": "passed",
+    "previousNextBoundary": "passed",
+    "allBoardIndexCount": 20,
+    "originalImageOpen": "passed",
+    "desktopHorizontalOverflow": false,
+    "mobile390HorizontalOverflow": false,
+    "screenshots": [
+      "verification/gallery-desktop.png",
+      "verification/gallery-mobile.png"
+    ]
+  },
+  "notVerified": [
+    "Moni business interactions or APIs",
+    "D1/DO/Access/AI integration",
+    "Per-component WCAG AA contrast and keyboard behavior",
+    "Exact responsive implementation geometry",
+    "Full English and dark variants of every screen"
+  ],
+  "userApproval": "approved_for_asset_extraction",
+  "assetExtraction": "completed",
+  "scope": "UI design verification snapshot; current asset verification is recorded in assets/verification/checks.json."
+}
